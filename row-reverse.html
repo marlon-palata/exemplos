@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Flexbox - row-reverse</title>
+    <style>
+        /* Estilização básica para a página */
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* O contêiner principal */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 3px solid #333;
+            border-radius: 10px;
+            background-color: #e0e0e0;
+
+            /* A mágica do Flexbox acontece aqui! */
+            display: flex;
+            flex-direction: row-reverse; /* Define o eixo como horizontal e a direção como reversa */
+        }
+
+        /* Estilização dos itens dentro do contêiner */
+        .item {
+            padding: 20px 30px;
+            margin: 10px; /* Margem para separar os itens */
+            background-color: #5b9bd5;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Cores diferentes para cada item para facilitar a visualização */
+        .item-1 { background-color: #ff6347; } /* Tomate */
+        .item-2 { background-color: #ffd700; } /* Ouro */
+        .item-3 { background-color: #3cb371; } /* Verde Mar */
+        .item-4 { background-color: #8a2be2; } /* Azul Violeta */
+
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo <code>flex-direction: row-reverse</code></h1>
+
+    <div class="container">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+        <div class="item item-4">Item 4</div>
+    </div>
+
+</body>
+</html>
